@@ -84,25 +84,27 @@
 // console.log(arr1.myEach(function2));
 
 
+// Array.prototype.myReduce = function(callback, arg) {
+//   let accum;
+//   if (arg) {
+//     accum = arg;
+//   }
+//   else {
+//     accum = this.shift();
+//   }
 
+//   for (let i = 0; i < this.length; i++) {
+//     accum = callback(this[i], accum);
+//   }
 
+//   return accum;
+// };
 
-Array.prototype.myReduce = function(callback, arg = this[0]) {
-  let accum = arg;
-  for (let i = 0; i < this.length; i++) {
-    callback(this[i], accum);
-  }
+// const addition = function(el, accum) {
+//   return accum + el;
+// };
 
-  // arr1.forEach(element => function2(element,arr));
-  return accum;
-};
+// arr1 = [1,2,3];
 
-
-const addition = function (el, accum) {
-  accum = accum + el;
-};
-
-arr1 = [1,2,3]
-
-console.log(arr1.myReduce(addition));
+// console.log(arr1.myReduce(addition, 15));
 
