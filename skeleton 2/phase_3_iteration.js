@@ -14,9 +14,8 @@
 //   } return this;
 // }
 
-
-
-Array.prototype.substrings = function () {
+// String#substrings
+String.prototype.substrings = function () {
   let subs = []
 
     for (let i = 0; i < this.length; i++) {
@@ -26,8 +25,8 @@ Array.prototype.substrings = function () {
     } return subs;
 }
 
-let arr = [6, 5, 4, 57, 3, 85, 366, 23];
-let arr1 = ['helloworld'];
+// let arr = [6, 5, 4, 57, 3, 85, 366, 23];
+let arr1 = 'helloworld';
 
-console.log(arr.substrings());
-// console.log(arr1.substrings());
+// console.log(arr.substrings());
+console.log(arr1.substrings());
